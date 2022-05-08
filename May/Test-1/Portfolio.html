@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4c255895ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- navbar section -->
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+
+          <li>
+            <a href="">About</a>
+          </li>
+
+          <li>
+            <a href="">Skills</a>
+          </li>
+
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- banner section -->
+      <div class="container banner">
+        <div class="image">
+          <img src="./images/banner-image.png" alt="banner-image" />
+        </div>
+
+        <div class="content">
+          <p class="title">Hey! I'am <span>Adarsh Gautam</span></p>
+          <p class="desc">I am a Software Developer</p>
+          <button class="btn" href="#about">About Me</button>
+        </div>
+      </div>
+
+      <!-- About Section -->
+
+      <div class="container about">
+        <div class="content">
+          <p class="title">About</p>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            nobis corporis voluptas suscipit eius? Sit odit repellat accusantium
+            excepturi reprehenderit quae optio at enim porro. Nisi aspernatur
+            deleniti aliquam aliquid, eos et dolor, omnis debitis quaerat
+            aperiam amet sit blanditiis, ipsum ut vitae neque? Tenetur quis
+            accusamus aspernatur similique enim.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="./images/about-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- skill section -->
+
+      <div class="container skills">
+        <div class="content">
+          <p class="title">Skills</p>
+          <div class="grid-container">
+            <div class="grid-item"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="grid-item"><i class="fa-brands fa-css3"></i> CSS</div>
+            <div class="grid-item">
+              <i class="fa-brands fa-bootstrap"></i> bootstrap
+            </div>
+            <div class="grid-item">
+              <i class="fa-brands fa-js"></i> Javascript
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact section -->
+
+      <div class="contact container">
+        <div class="contact image">
+          <img src="./images/contact-image.png" alt="" />
+        </div>
+
+        <div class="content">
+          <p class="title">Get in touch with me here!</p>
+          <form action="#" class="form">
+            <div clas="field">
+              <label for="email" class="title">Your email Id:</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value="email@gmail.com"
+                class="input"
+              />
+            </div>
+            <div clas="field">
+              <label for="message" class="title">Your message:</label><br />
+              <textarea name="" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <input
+              class="submitbtn"
+              type="submit"
+              value="Submit"
+              class="submitbtn"
+            />
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+
+      <footer class="footer">
+        <div class="footer-title">
+          <h2>Adarsh Gautam</h2>
+        </div>
+        <div class="social-sites">
+          <div class="footer-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <p>@<span id="year"></span>copyright all right reserved</p>
+            <script>
+              var d = new Date();
+              var n = d.getFullYear();
+              document.getElementById("year").innerHTML = n;
+            </script>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
